@@ -1,21 +1,19 @@
-
-import db from "/data/sqlite.ts";
 import Flip from "/islands/Flip.tsx";
 import { Header } from "/components/Header.tsx";
+import mandarin from "../data/db.ts";
 
-type Word = {
+type mandarin = {
   hanzi:string;
   pinyin:string;
   english:string;
-  word_index:number
 }
 
 export default function Home() {
   const getWords =()=>{
-    const words:Word[]=[];
-    for (const [Hanzi, pinyin, english, word_index] of db.query("SELECT Hanzi,pinyin,english,word_index FROM week_1")) {
-      words.push({ hanzi:Hanzi,pinyin,english,word_index } as unknown as Word);
-    }
+    const words:mandarin[]=[];
+    mandarin.forEach((word)=>{
+      words.push({ hanzi:word.Hanzi, pinyin:word.pinyin, english:word.english } as unknown as mandarin);
+    });
     return words;
   }
 

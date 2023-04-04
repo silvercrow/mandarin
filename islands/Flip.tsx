@@ -1,3 +1,5 @@
+
+
 interface FlipProps {
   index:number;
   color:string;
@@ -6,10 +8,19 @@ interface FlipProps {
   english:string;
 }
 
+
 export default function Flip({index,color,hanzi,pinyin,english}: FlipProps) {
 
   const flipme =(event:any)=>{
     event.currentTarget.parentElement?.parentElement?.parentElement?.classList.toggle('flipme');
+  }
+  const playAudio =(file:string)=>{
+    const tune = new Audio(file);
+    tune.loop = false;
+    tune.play();
+  }
+  const PlayWord =()=>{
+    playAudio
   }
   
   return (
