@@ -1,6 +1,6 @@
 import Flip from "/islands/Flip.tsx";
 import { Header } from "/components/Header.tsx";
-import mandarin from "../data/db.ts";
+import vocabulary from "../data/vocabulary.ts";
 
 type mandarin = {
   hanzi:string;
@@ -11,7 +11,7 @@ type mandarin = {
 export default function Home() {
   const getWords =()=>{
     const words:mandarin[]=[];
-    mandarin.forEach((word)=>{
+    vocabulary.forEach((word)=>{
       words.push({ hanzi:word.Hanzi, pinyin:word.pinyin, english:word.english } as unknown as mandarin);
     });
     return words;

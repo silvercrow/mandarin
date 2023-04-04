@@ -1,4 +1,4 @@
-const mandarin =[
+const vocabulary =[
       {
         "Hanzi": "一月",
         "pinyin": "yī yuè",
@@ -205,4 +205,4 @@ const mandarin =[
         "english": "Happy"
       }
 ];
-export default mandarin;
+export default vocabulary;
