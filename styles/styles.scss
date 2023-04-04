@@ -40,16 +40,15 @@ span{
     .container {
       height: 100%;
       width: 100%;
-      margin: auto;
     }
     .flip-container {
       perspective: 1000;
-      margin: 8px;
+      margin: 5px;
       float: left;
       cursor: pointer;
     }
     .flip-container .flippable {
-      transition: 0.5s;
+      transition: 0.8s;
       transform-style: preserve-3d;
       position: relative;
     }
