@@ -19,10 +19,7 @@ export default function Flip({index,color,hanzi,pinyin,english}: FlipProps) {
     tune.loop = false;
     tune.play();
   }
-  const PlayWord =()=>{
-    playAudio
-  }
-  
+
   return (
     <div key={index} class="flip-container">
     <div class={`flippable ${color}`}>
@@ -31,7 +28,7 @@ export default function Flip({index,color,hanzi,pinyin,english}: FlipProps) {
           <span>{hanzi}</span>
         </div>
         <div class="buttons">
-          <button class="button play" >
+          <button class="button play" onClick={()=>{playAudio(`/audio/vocabulary1/${index+1}.mp3`)}}>
           <span class="material-symbols-outlined">play_circle</span> play
           </button>
           <button class="button flip" onClick={flipme}>
