@@ -40,6 +40,7 @@ span{
     .container {
       height: 100%;
       width: 100%;
+      display: flow-root;
     }
     .flip-container {
       perspective: 1000;
@@ -106,9 +107,11 @@ span{
                   margin-top: 10px;
                   font-size: 25px;
             }
-            .flipback{
-                  margin-top: 20px;
-            }
+      }
+      .buttons{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
       }
 
     }
@@ -155,3 +158,23 @@ span{
       border-color: #f9a294;
     }
     
+.footer{
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      align-items: center;
+      text-align: center;
+      a{
+            text-decoration: none;
+            line-height: 20px;
+            color:#000000;
+            &:visited{
+                  color:#000000;
+            }
+            &:active{
+                  color:#000000;
+            }
+      }
+      
+}

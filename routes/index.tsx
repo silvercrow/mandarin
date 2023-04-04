@@ -44,6 +44,11 @@ export default function Home() {
         );
         })}
       </div>
+      <div class="footer">
+      
+        <a href="https://github.com/silvercrow" target="_blank">David Balan ©
+      </a>
+      </div>
     </>
   );
 }

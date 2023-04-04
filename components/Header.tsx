@@ -2,8 +2,9 @@ import { Head } from "$fresh/runtime.ts";
 export function Header() {
   return (
       <Head>
-        <title>Mandarin Week 1</title>
+        <title>Mandarin Vocabulary Week 1</title>
         <link rel="stylesheet" href="/styles.min.css"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         <link 
         rel="preconnect" 
         href="https://fonts.googleapis.com"

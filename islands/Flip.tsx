@@ -14,6 +14,9 @@ export default function Flip({index,color,hanzi,pinyin,english}: FlipProps) {
   const flipme =(event:any)=>{
     event.currentTarget.parentElement?.parentElement?.parentElement?.classList.toggle('flipme');
   }
+  const flipback =(event:any)=>{
+    event.currentTarget.parentElement?.parentElement?.parentElement?.parentElement?.classList.toggle('flipme');
+  }
   const playAudio =(file:string)=>{
     const tune = new Audio(file);
     tune.loop = false;
@@ -40,9 +43,14 @@ export default function Flip({index,color,hanzi,pinyin,english}: FlipProps) {
         <div class="info">
         <div class="pinyin">{pinyin}</div>
         <div class="english">{english}</div>
-        <button class="button flipback" onClick={flipme}>
+        <div class="buttons">
+        <button class="button play" onClick={()=>{playAudio(`/audio/vocabulary1/${index+1}.mp3`)}}>
+          <span class="material-symbols-outlined">play_circle</span> play
+          </button>
+        <button class="button flipback" onClick={flipback}>
           <span class="material-symbols-outlined">360</span> flip
         </button>
+        </div>
         </div>
       </div>
     </div>
