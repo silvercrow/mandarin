@@ -1,0 +1,152 @@
+body {
+      background: #f1f1f1;
+    }
+
+.button{
+font-size: 15px;
+padding: 10px;
+width: 40%;
+border-radius: 6px;
+background-color: rgba(255, 255, 255, 0.881);
+border-bottom: 5px solid #E4E4E4;
+line-height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+cursor: pointer;
+}
+.play{
+      color: #d32020;
+}
+.flip{
+      color: #2a8cd2;
+}
+.flipback{
+      color: #2a8cd2;
+}
+
+    .container {
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .flip-container {
+      perspective: 1000;
+      margin: 10px;
+      float: left;
+      cursor: pointer;
+    }
+    .flip-container .flippable {
+      transition: 0.5s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+    .flip-container .flipme {
+      transform: rotateY(180deg);
+    }
+    .flip-container,
+    .front,
+    .back {
+      width: 220px;
+      height: 180px;
+      text-align: center;
+      font-size: 40px;
+      border-radius: 5px;
+    }
+    .front,
+    .back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .front {
+      //z-index: 2;
+      color: white;
+
+      .text{
+            margin-top: 20px;
+            span{
+                  align-items: center;
+                  font-size: 50px;
+                  font-family: verdana;
+            }
+      }
+      .buttons{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+      }
+
+    }
+    .back {
+      transform: rotateY(180deg);
+      font-size: 18px;
+      border: 1px solid;
+      font-family: Verdana;
+      color: white;
+      .info{
+            margin-top: 20px;
+            .pinyin{
+                  margin-top: 10px;
+                  font-size: 20px;
+            }
+            .english{
+                  margin-top: 10px;
+                  font-size: 25px;
+            }
+            .flipback{
+                  margin-top: 20px;
+            }
+      }
+
+    }
+    .ac-0 .front {
+      background: #d111d1;
+    }
+    .ac-0 .back {
+      background: #360544;
+      border-color: #be86f5;
+    }
+    .ac-1 .front {
+      background: #1189d1;
+    }
+    .ac-1 .back {
+      background: #052c44;
+      border-color: #86cbf5;
+    }
+    .ac-2 .front {
+      background: #18b755;
+    }
+    .ac-2 .back {
+      background: #063016;
+      border-color: #7aeea7;
+    }
+    .ac-3 .front {
+      background: #f3b50b;
+    }
+    .ac-3 .back {
+      background: #614804;
+      border-color: #fbe19c;
+    }
+    .ac-4 .front {
+      background: #ef4809;
+    }
+    .ac-4 .back {
+      background: #5c1c03;
+      border-color: #fbb296;
+    }
+    .ac-5 .front {
+      background: #E82C0C;
+    }
+    .ac-5 .back {
+      background: #571004;
+      border-color: #f9a294;
+    }
+    
