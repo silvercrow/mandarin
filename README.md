@@ -1,7 +1,7 @@
 # Deno Mandarin
 > Deno, Fresh, Preact, TypeScript, HTMLAudioElement
 
-<img src="https://mandarin.deno.dev/preview.png" width="1266" height="1150" />
+<img src="https://mandarin.deno.dev/preview.png"/>
 
 
 ## Link to demo
