@@ -1,11 +1,21 @@
-# fresh project
+# Deno Mandarin
+> Deno, Fresh, Preact, TypeScript, HTMLAudioElement
 
-### Usage
+<img src="https://mandarin.deno.dev/preview.png" width="270" height="500" />
 
-Start the project:
 
-```
+## Link to demo
+[See demo](https://mandarin.deno.dev/)
+
+## Installation and usage
+> run deno task 
+
+```sh
 deno task start
 ```
 
-This will watch the project directory and restart as necessary.
+> or launch makefile:
+
+```sh
+make dev
+```

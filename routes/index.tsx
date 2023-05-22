@@ -9,6 +9,7 @@ type mandarin = {
 }
 
 export default function Home() {
+
   const getWords =()=>{
     const words:mandarin[]=[];
     vocabulary.forEach((word)=>{
@@ -24,7 +25,6 @@ export default function Home() {
     max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
   }
-
 
   return (
     <>
@@ -45,8 +45,7 @@ export default function Home() {
         })}
       </div>
       <div class="footer">
-      
-        <a href="https://github.com/silvercrow" target="_blank">David Balan ©
+        <a href="https://github.com/silvercrow" target="_blank">© David Balan 
       </a>
       </div>
     </>
