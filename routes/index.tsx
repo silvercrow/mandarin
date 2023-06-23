@@ -47,6 +47,7 @@ export default function Home() {
       <div class="footer">
         <a href="https://github.com/silvercrow" target="_blank">© David Balan 
       </a>
+        [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://bmc.link/tquickbrownfox)
       </div>
     </>
   );
